@@ -29,30 +29,30 @@ class HomeActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-//        binding.salad.setOnClickListener {
-//            var myIntent= Intent(this, CategoryActivity::class.java)
-//            myIntent.putExtra("TITTLE", "Salads")
-//            myIntent.putExtra("CATEGORY", "Salad")
-//            startActivity(myIntent)
-//        }
-//        binding.maindish.setOnClickListener {
-//            var myIntent= Intent(this, CategoryActivity::class.java)
-//            myIntent.putExtra("TITTLE", "Main Dish")
-//            myIntent.putExtra("CATEGORY", "Dish")
-//            startActivity(myIntent)
-//        }
-//        binding.drinks.setOnClickListener {
-//            var myIntent= Intent(this, CategoryActivity::class.java)
-//            myIntent.putExtra("TITTLE", "Drinks")
-//            myIntent.putExtra("CATEGORY", "Drinks")
-//            startActivity(myIntent)
-//        }
-//        binding.dessert.setOnClickListener {
-//            var myIntent= Intent(this, CategoryActivity::class.java)
-//            myIntent.putExtra("TITTLE", "Desserts")
-//            myIntent.putExtra("CATEGORY", "Desserts")
-//            startActivity(myIntent)
-//        }
+        binding.salad.setOnClickListener {
+            var myIntent= Intent(this, CategoryActivity::class.java)
+            myIntent.putExtra("TITTLE", "Salads")
+            myIntent.putExtra("CATEGORY", "Salad")
+            startActivity(myIntent)
+        }
+        binding.maindish.setOnClickListener {
+            var myIntent= Intent(this, CategoryActivity::class.java)
+            myIntent.putExtra("TITTLE", "Main Dish")
+            myIntent.putExtra("CATEGORY", "Dish")
+            startActivity(myIntent)
+        }
+        binding.drinks.setOnClickListener {
+            var myIntent= Intent(this, CategoryActivity::class.java)
+            myIntent.putExtra("TITTLE", "Drinks")
+            myIntent.putExtra("CATEGORY", "Drinks")
+            startActivity(myIntent)
+        }
+        binding.dessert.setOnClickListener {
+            var myIntent= Intent(this, CategoryActivity::class.java)
+            myIntent.putExtra("TITTLE", "Desserts")
+            myIntent.putExtra("CATEGORY", "Desserts")
+            startActivity(myIntent)
+        }
     }
 
     private fun setUpRecyclerView() {
