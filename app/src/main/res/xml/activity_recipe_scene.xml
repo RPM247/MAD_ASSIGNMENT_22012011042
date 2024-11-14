@@ -20,6 +20,7 @@
             android:layout_height="100dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
+
         <Constraint
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_width="match_parent"
@@ -29,6 +30,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="100dp"
             android:id="@+id/relativeLayout"/>
+
         <Constraint
             android:id="@+id/shade"
             app:layout_constraintEnd_toEndOf="parent"
@@ -37,6 +39,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/recipe_img"
             app:layout_constraintStart_toStartOf="parent"
             android:alpha="0"/>
+
         <Constraint
             android:id="@+id/back_btn"
             android:layout_width="50dp"
@@ -45,6 +48,7 @@
             android:layout_marginTop="24dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
+
         <Constraint
             android:id="@+id/go_up"
             app:layout_constraintEnd_toEndOf="parent"
