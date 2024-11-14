@@ -34,9 +34,28 @@ class RecipeActivity : AppCompatActivity() {
         binding.time.text = ing?.get(0)
         for (i in 1 until ing!!.size) {
             binding.ingData.text =
-                """${binding.ingData.text}
-           🟢 ${ing[i]}
-        """.trimIndent()
+                """${binding.ingData.text} 
+                🟢 ${ing[i]} """.trimIndent()
+        }
+
+        binding.steps.background=null
+        binding.steps.setTextColor(getColor(R.color.black))
+        binding.steps.setOnClickListener{
+            binding.steps.setBackgroundResource(R.drawable.btn_ing)
+            binding.steps.setTextColor(getColor(R.color.white))
+            binding.ing.setTextColor(getColor(R.color.black))
+            binding.ing.background=null
+            binding.stepsSv.visibility=View.VISIBLE
+            binding.ingSv.visibility=View.GONE
+        }
+
+        binding.ing.setOnClickListener{
+            binding.ing.setBackgroundResource(R.drawable.btn_ing)
+            binding.ing.setTextColor(getColor(R.color.white))
+            binding.steps.setTextColor(getColor(R.color.black))
+            binding.steps.background=null
+            binding.ingSv.visibility=View.VISIBLE
+            binding.stepsSv.visibility=View.GONE
         }
 
         binding.fullScreen.setOnClickListener {
