@@ -19,7 +19,8 @@ class CategoryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
-        title=intent.getStringExtra("TITTLE")
+        val selCat=intent.getStringExtra("CATEGORY")
+        binding.tittle.text=selCat
         setUpRecyclerView()
         binding.goBackHome.setOnClickListener{
             finish()
