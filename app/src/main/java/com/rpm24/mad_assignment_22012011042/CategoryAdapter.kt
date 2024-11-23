@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.cursoradapter.widget.SimpleCursorAdapter.ViewBinder
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.rpm24.mad_assignment_22012011042.databinding.CategoryRvBinding
